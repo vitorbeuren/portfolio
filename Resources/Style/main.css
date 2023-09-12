@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
 .no_scroll {
@@ -15,17 +16,17 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 8vh;
+  min-height: 15vh;
   position: absolute;
   width: 100%;
   top: 0;
   background-color: transparent;
-  font-family: "hk_groteskbold", Helvetica, sans-serif;
+  font-family: "hk_grotesklight", Helvetica, sans-serif;
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .nav_hide {
-  top: -8vh;
+  top: -15vh;
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -42,16 +43,16 @@ nav {
 }
 
 #header-logo {
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 nav img {
-  height: 5vh;
+  height: 7vh;
 }
 
 .nav_links {
   display: table;
-  margin-right: 15%;
+  margin-right: 10%;
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -79,7 +80,7 @@ nav img {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: #272727;
+  background-color: #ffffff;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -91,20 +92,20 @@ nav img {
 .nav_links li::after {
   content: "";
   display: block;
-  width: 70%;
-  margin-left: 15%;
-  height: 4px;
-  bottom: -8px;
+  width: 60%;
+  margin-left: 20%;
+  height: 2px;
+  bottom: -4px;
   left: 0;
   position: relative;
-  background-color: #f2b366;
+  background-color: #05F26C;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
 }
 
 #last_nav_li::after {
-  margin-left: calc(15% + 1.5vh);
+  margin-left: calc(20% + 1.5vh);
 }
 
 .nav_links li:hover::after {
@@ -113,9 +114,51 @@ nav img {
 }
 
 .nav_links .current_page_big::after {
-  background-color: #fa8756;
+  background-color: #03A64A;
   visibility: visible;
   transform: scaleX(1);
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "hk_groteskbold", Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 4.5em;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 8vh;
+}
+
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.button-bullet{
+  font-family: "hk_groteskmedium", Helvetica, sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  min-height: 50px;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  grid-auto-columns: auto;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  transition: background-color .6s;
+  display: grid;
+  position: relative;
 }
 
 @media screen and (max-width: 1024px) {
@@ -126,12 +169,20 @@ nav img {
   #header-logo {
     margin-left: 7%;
   }
+
+  h1 {
+    font-size: 3em;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  
   nav {
-    background-color: #ffffff;
-    box-shadow: 0 0 10px #747474;
+    /* background-color: #ffffff; */
+    /* box-shadow: 0 0 10px #747474; */
     justify-content: space-between;
     position: fixed;
   }
@@ -142,14 +193,16 @@ nav img {
 
   body {
     overflow-x: hidden;
+    display: flex;
   }
 
   .nav_links {
     position: absolute;
     right: 0;
     margin-right: 0;
-    top: 8vh;
-    height: 92vh;
+    top: 0vh;
+    padding-top: 15vh;
+    height: 100vh;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -185,7 +238,7 @@ nav img {
     margin: 0% 0 0% 10%;
     bottom: 0;
     position: relative;
-    background-color: #fa8756;
+    background-color: #03A64A;
     right: 0;
     width: 8px;
     z-index: 151;
@@ -196,7 +249,7 @@ nav img {
   }
 
   .current_page_big::after {
-    background-color: #fa8756;
+    background-color: #03A64A;
     visibility: hidden;
     transform: scaleX(0);
     display: none;
@@ -215,6 +268,8 @@ nav img {
   .nav_active {
     transform: translateX(0%);
   }
+
+
 }
 
 @keyframes navLinkFade {
@@ -230,6 +285,7 @@ nav img {
 
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
+  background-color: #272727;
 }
 
 .toggle .line2 {
@@ -238,6 +294,7 @@ nav img {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+  background-color: #272727;
 }
 
 .darkened_body {
@@ -280,89 +337,50 @@ nav img {
 /* \/ FOOTER \/ */
 
 footer {
-  background-color: rgb(228, 228, 228);
-  text-align: left;
-  color: #757575;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+  color: #fff;
   z-index: 40;
   position: relative;
+  padding: 2.5vh 7vw;
   bottom: 0;
-  width: 100%;
-  box-shadow: 0 0 10px #757575;
-}
-
-#footer_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 70%;
-}
-
-footer .contacts {
-  margin: 40px 5%;
-  display: inline-block;
-  font-size: 18px;
-}
-
-footer .contacts h3 {
-  font-size: 24px;
+  width: 100vw;
   font-family: "hk_groteskbold", Helvetica, sans-serif;
-  font-weight: 600;
-  margin: 5% 0;
-  color: #575757;
+  font-weight: bold;
+  text-align: left;
+  font-size: 1em;
+  transition: all 0.3s ease-in-out;
 }
 
-footer .contacts .f_sec_title {
-  cursor: pointer;
-  margin: 10% 0 1% 0;
-  font-family: "hk_grotesksemibold", Helvetica, sans-serif;
-  color: #575757;
-}
-
-footer .contacts .f_sec_content {
-  font-family: "hk_groteskregular", Helvetica, sans-serif;
-}
-
-.credits {
-  background-color: #c5c5c5;
-  padding: 10px 0;
-  width: 100%;
-  text-align: center;
-}
-
-.credits p {
-  color: #272727;
-  margin: 0 auto;
-  font-size: 16px;
+#linkedin-logo{
+  display: flex;
+  height: 16px;
 }
 
 @media screen and (max-width: 768px) {
-  #footer_container {
+  footer {
+    font-family: "hk_groteskmedium", Helvetica, sans-serif;
+    font-weight: normal;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    margin: auto;
-    width: 70%;
+    margin-top: 85vh;
+    padding: 0 10vw;
   }
 
-  footer .contacts {
-    margin: 40px 0 10px 0;
-    display: block;
-    width: 100%;
+  footer span {
+    max-width: 50vw;
   }
 
-  #contact_noiva {
-    margin-bottom: 40px;
-  }
+  #linkedin-logo{
 
-  .credits {
-    padding: 8px 0;
-  }
-
-  .credits p {
-    font-size: 12px;
+    width: 16px;
+    flex-direction: column;
   }
 }
 
