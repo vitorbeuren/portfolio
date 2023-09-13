@@ -29,7 +29,7 @@
 
   </head>
 
-  <body>
+  <body id="ind_cover_bg_image">
 
     <div class="darkened_body" onclick="closeNav()"></div>
     <header>
@@ -41,7 +41,7 @@
         </div>
         <ul class="nav_links">
           <li><a href="services.html" class="other_pages">Services</a></li>
-          <li><a href="portfolio.html" class="current_page">Portfolio</a></li>
+          <li><a href="portfolio.html" class="other_pages">Portfolio</a></li>
           <li><a href="about.html" class="other_pages">About</a></li>
           <li id="last_nav_li">
             <a href="contact.html" class="other_pages" id="last_nav"
@@ -56,8 +56,172 @@
         </div>
       </nav>
     </header>
-</body>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/textFit.js"></script>
-<script src="Resources/Script/nav.js"></script>
-<script src="Resources/Script/form.js"></script>
+
+   <main>
+      <!--  <section class="about_us">
+        <div class="content">
+          <div class="about_noivo">
+            <img src="Resources/Images/about_noivo.jpg" alt="noivo" />
+            <h2>O Noivo</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="about_noiva">
+            <img src="Resources/Images/about_noiva.jpg" alt="noiva" />
+            <h2>A Noiva</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="to_details">
+        <div class="content">
+          <div class="content_details">
+            <h2>Data e Local</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="center_button">
+              <a href="evento.html"
+                ><button><span>DETALHES</span></button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="to_gifts">
+        <div class="content">
+          <div class="content_gifts content_gifts_img">
+            <img
+              src="Resources/Images/madruga.gif"
+              alt="Chaves dando um tostão para o Seu Madruga"
+            />
+          </div>
+          <div class="content_gifts content_gifts_text">
+            <h2>Presentes</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="center_button">
+              <a href="presentes.html"
+                ><button><span>LISTA DE PRESENTES</span></button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="confirmation">
+        <div class="border_simulation">
+          <div class="content">
+            <div class="content_confirmation">
+              <h2>Confirme sua Presença!</h2>
+              <p>
+                Para a organização do casamento, é de suma importância que os
+                convidados confirmem sua presença em até x dias antes do evento!
+              </p>
+              <div class="presence_form" action="/my-handling-form-page" method="post">
+                <form onsubmit="return false">
+                  <fieldset class="number_code">
+                    <legend for="code">Nº do seu convite</legend>
+                    <div>
+                      <input onfocus="this.select();" type="number" name="code" class="code_input" id="code1" required placeholder="0"/>
+                      <input onfocus="this.select();" type="number" name="code" class="code_input" id="code2" required placeholder="1"/>
+                      <input onfocus="this.select();" type="number" name="code" class="code_input" id="code3" required placeholder="2"/>
+                      <input onfocus="this.select();" type="number" name="code" class="code_input" id="code4" required placeholder="3"/>
+                      <input onfocus="this.select();" type="number" name="code" class="code_input" id="code5" required placeholder="4"/>
+                      <input onfocus="this.select();" type="number" name="code" class="code_input" id="code6" required placeholder="5"/>
+                    </div>
+                    <p class="wrong_number">Ops! Parece que esse número não está relacionado a nenhum convite.</p>
+                    <button id="code_verify" class="code_verify" type="button">Verificar Código</button>
+                  </fieldset>
+                  <fieldset>
+                    <label for="guestName">Seu Nome</label>
+                    <input class="name_input" type="text" name="guest_name" id="guestName" value="Digite seu nome aqui..." required/>
+                  </fieldset>
+                  <fieldset>
+                    <legend>
+                      Contando com você, quantas pessoas irão?
+                    </legend>
+                    <div class="select">
+                      <select name="slct" id="slct" required>
+                        <option value="" id="escolha" selected disabled>Escolha...</option>
+                        <option value="1">Uma Pessoa</option>
+                        <option value="2">Duas Pessoas</option>
+                        <option value="3">Três Pessoas</option>
+                        <option value="4">Quatro Pessoas</option>
+                        <option value="5">Cinco Pessoas</option>
+                        <option value="6">Seis Pessoas</option>
+                      </select>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>
+                      Quantas dessas pessoas são crianças de até 8 anos?
+                    </legend>
+                    <div class="select2">
+                      <select name="slct" id="slct2" required>
+                        <option value="" id="escolha" selected disabled>Escolha...</option>
+                        <option value="1">Uma</option>
+                        <option value="2">Duas</option>
+                        <option value="3">Três</option>
+                        <option value="4">Quatro</option>
+                        <option value="5">Cinco</option>
+                        <option value="6">Seis</option>
+                      </select>
+                    </div>
+                    <div class="optionKids">
+                      <input type="checkbox" name="noKids" id="noKids">
+                      <label for="noKids"> Não levarei crianças comigo.</label>
+                    </div>
+                  </fieldset>
+                  <button
+                        class="center_button"
+                        id="form_submit"
+                        type="submit"
+                      >
+                        <span>CONFIRMAR</span>
+                      </button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </main>
+
+    <footer>
+          <span>© Vitor Beuren Andrade. Coded in 2023.</span>
+          <a href="https://www.linkedin.com/in/vitorbandrade/" id="linkedin-logo"><img src="Resources/Images/Daco_2714495.png"></a>
+    </footer>
+  </body>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/textFit.js"></script>
+  <script src="Resources/Script/nav.js"></script>
+  <script src="Resources/Script/form.js"></script>
 </html>

@@ -24,25 +24,25 @@
     <link href="Resources/Fonts/SansFont2/stylesheet.css" rel="stylesheet" />
     <link href="Resources/Fonts/SansFont1/stylesheet.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="Resources/Style/main.css" /> 
-    <link rel="stylesheet" type="text/css" href="Resources/Style/index.css" />
+    <link rel="stylesheet" type="text/css" href="Resources/Style/about.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   </head>
 
-  <body>
+  <body id="ind_cover_bg_image">
 
     <div class="darkened_body" onclick="closeNav()"></div>
     <header>
       <nav>
         <div id="header-logo">
           <a href="index.html"
-            ><img src="Resources/Images/logo.png"
+            ><img src="Resources/Images/mountain-b.png"
           /></a>
         </div>
         <ul class="nav_links">
           <li><a href="services.html" class="other_pages">Services</a></li>
           <li><a href="portfolio.html" class="other_pages">Portfolio</a></li>
-          <li><a href="about.html" class="current_page">About</a></li>
+          <li><a href="about.html" class="other_pages">About</a></li>
           <li id="last_nav_li">
             <a href="contact.html" class="other_pages" id="last_nav"
               >Contact</a
@@ -57,8 +57,23 @@
       </nav>
     </header>
 
-</body>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/textFit.js"></script>
-<script src="Resources/Script/nav.js"></script>
-<script src="Resources/Script/form.js"></script>
+   <main>
+      <div id="content">
+      <div id="text-div">
+        <h3 id="about-h3">Who am I?</h3>
+        <p>My name is Vitor Beuren Andrade (24), I am a Brazilian multimedia developer living in Porto, Portugal, and studying philosophy in the University of Porto. It is said that Socrates worked as a mason and the Apostle Paul built tents; following their example, in my turn, I develop media — video, motion graphics, images, courses, graphic material etc.</p>
+        <p>There is nothing unworthy about working for money — those two caracters I mentioned did that. Even so, I am close to multimedia development since I was a teenager, feeling very "at home" and happy doing my job. Thus, my goal is always to produce the best regarding consistency and quality, always striving for excellency.</p>
+      </div>
+      <div id="image-div"></div>
+      </div>
+    </main>
+
+    <footer>
+          <span>© Vitor Beuren Andrade. Coded in 2023.</span>
+          <a href="https://www.linkedin.com/in/vitorbandrade/" id="linkedin-logo"><img src="Resources/Images/linkedin-b.png"></a>
+    </footer>
+  </body>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/textFit.js"></script>
+  <script src="Resources/Script/nav.js"></script>
+  <script src="Resources/Script/form.js"></script>
 </html>

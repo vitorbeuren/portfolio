@@ -9,6 +9,10 @@
   overflow: hidden;
 }
 
+.block-div{
+  height: 5000px;
+}
+
 /* \/ HEADER \/ */
 
 nav {
@@ -33,13 +37,13 @@ nav {
 .scroll_nav {
   background-color: #ffffff;
   position: fixed;
-  box-shadow: 0 0 10px #0000004f;
+  box-shadow: 0 0 10px #0D0D0D;
   top: 0;
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .scroll_nav ul li a {
-  color: #272727;
+  color: #0D0D0D;
 }
 
 #header-logo {
@@ -181,8 +185,6 @@ h1 {
   }
   
   nav {
-    /* background-color: #ffffff; */
-    /* box-shadow: 0 0 10px #747474; */
     justify-content: space-between;
     position: fixed;
   }
@@ -227,7 +229,7 @@ h1 {
     align-items: center;
     justify-content: flex-end;
     height: 10vh;
-    color: #272727;
+    color: #0D0D0D;
     padding: 0;
   }
 
@@ -285,7 +287,7 @@ h1 {
 
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
-  background-color: #272727;
+  background-color: #0D0D0D;
 }
 
 .toggle .line2 {
@@ -294,12 +296,12 @@ h1 {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-  background-color: #272727;
+  background-color: #0D0D0D;
 }
 
 .darkened_body {
   position: fixed;
-  background-color: #000000;
+  background-color: #0D0D0D;
   width: 100vw;
   z-index: 100;
   height: 100vh;
@@ -345,8 +347,8 @@ footer {
   height: 15vh;
   color: #fff;
   z-index: 40;
-  position: relative;
-  padding: 2.5vh 7vw;
+  position: absolute;
+  padding: 2.5vh 10vw;
   bottom: 0;
   width: 100vw;
   font-family: "hk_groteskbold", Helvetica, sans-serif;
@@ -361,6 +363,13 @@ footer {
   height: 16px;
 }
 
+
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 0 7vw;
+  }
+}
+
 @media screen and (max-width: 768px) {
   footer {
     font-family: "hk_groteskmedium", Helvetica, sans-serif;
@@ -371,6 +380,7 @@ footer {
     align-items: center;
     margin-top: 85vh;
     padding: 0 10vw;
+    flex-wrap: nowrap;
   }
 
   footer span {
@@ -378,7 +388,6 @@ footer {
   }
 
   #linkedin-logo{
-
     width: 16px;
     flex-direction: column;
   }
