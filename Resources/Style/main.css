@@ -350,7 +350,7 @@ footer {
   position: absolute;
   padding: 2.5vh 10vw;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   font-family: "hk_groteskbold", Helvetica, sans-serif;
   font-weight: bold;
   text-align: left;
