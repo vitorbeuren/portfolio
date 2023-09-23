@@ -21,12 +21,11 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <link href="Resources/Fonts/SansFont2/stylesheet.css" rel="stylesheet" />
-    <link href="Resources/Fonts/SansFont1/stylesheet.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="Resources/Style/main.css" /> 
-    <link rel="stylesheet" type="text/css" href="Resources/Style/portfolio.css" />
+    <link href="resources/fonts/SansFont2/stylesheet.css" rel="stylesheet" />
+    <link href="resources/fonts/SansFont1/stylesheet.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="resources/style/main.css" /> 
+    <link rel="stylesheet" type="text/css" href="resources/style/portfolio.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="Resources/Script/lightbox.js"></script>
 
   </head>
 
@@ -41,11 +40,11 @@
           /></a>
         </div>
         <ul class="nav_links">
-          <li><a href="work.html" class="other_pages">Work</a></li>
-          <li><a href="portfolio.html" class="other_pages">Portfolio</a></li>
+          <li><a href="services.html" class="other_pages">Services</a></li>
+          <li><a href="portfolio.html" class="current_page">Portfolio</a></li>
           <li><a href="about.html" class="other_pages">About</a></li>
           <li id="last_nav_li">
-            <a href="contact.html" class="other_pages" id="last_nav"
+            <a onclick="openForm()" class="contact" id="last_nav"
               >Contact</a
             >
           </li>
@@ -63,170 +62,383 @@
         <h3 id="about-h3">My Work</h3>
         <div class="grid grid-works">
           <div class="cell cell-work">
-            <div class="por-img" onclick="openLightbox(1);toSlide(1);totalSlides(3)">
+            <div class="por-img" onclick="openLightbox(1);toSlide1(1, 1)">
               <div class="por-img-itself" id="por1"></div>
             </div>
             <div class="cell-work-div">
-              <h4 onclick="openLightbox(1);toSlide(1)">Accruent</h4>
-              <p>I was responsible for the development of courses to teach the end-users how to use Accurent's software. The process included interpreting and editing scripts, image and video editing, instructional design, authoring of Articulate Storyline & Rise courses, and a lot of teamwork and organization. A complete multimedia development experience.</p>
+              <h4 onclick="openLightbox(1);toSlide1(1, 1)">Accruent</h4>
+              <p>For a span of two years, I was employed by Accruent where I was tasked to create courses that would educate the end-users on how to operate Accruent's software. This process involved various aspects such as interpreting and editing scripts, editing images and videos, designing instructions, authoring Articulate Storyline & Rise courses, and collaborating with my team for seamless organization. The entire experience allowed me to develop my multimedia skills. To showcase my accomplishments, you can check out the work I've done for Accruent by clicking on the title of this card or the thumbnail.</p>
             </div>
           </div>
           <div class="cell cell-work">
-            <div class="por-img" onclick="openLightbox(2);toSlide(1)">
-              <div class="por-img-itself" id="por1"></div>
+            <div class="por-img" onclick="openLightbox(2);toSlide2(1, 7)">
+              <div class="por-img-itself" id="por2"></div>
             </div>
             <div class="cell-work-div">
-              <h4 onclick="openLightbox(2);toSlide(1)">Accruent</h4>
-              <p>I was responsible for the development of courses to teach the end-users how to use Accurent's software. The process included interpreting and editing scripts, image and video editing, instructional design, authoring of Articulate Storyline & Rise courses, and a lot of teamwork and organization. A complete multimedia development experience.</p>
+              <h4 onclick="openLightbox(2);toSlide2(1, 7)">Versah</h4>
+              <p>During my time at Rosa Odontologia as an office assistant and course producer, I came across Versah, a company specializing in cutting-edge equipment for dental surgeries. In an effort to improve my skills and portfolio, I took on the challenge of redesigning their visual identity. This included creating new logos for both the company and their course academy, selecting new colours and fonts, revamping their social media visuals, and producing motion graphics. The end result was highly satisfying and can be viewed by clicking on the title or thumbnail of this card.</p>
             </div>
           </div>
           <div class="cell cell-work">
-            <div class="por-img" onclick="openLightbox(3);toSlide(1)">
-              <div class="por-img-itself" id="por1"></div>
+            <div class="por-img" onclick="openLightbox(3);toSlide3(1, 6)">
+              <div class="por-img-itself" id="por3"></div>
             </div>
             <div class="cell-work-div">
-              <h4 onclick="openLightbox(3);toSlide(1)">Accruent</h4>
-              <p>I was responsible for the development of courses to teach the end-users how to use Accurent's software. The process included interpreting and editing scripts, image and video editing, instructional design, authoring of Articulate Storyline & Rise courses, and a lot of teamwork and organization. A complete multimedia development experience.</p>
+              <h4 onclick="openLightbox(3);toSlide3(1, 6)">Techfer</h4>
+              <p>A local PPE company was struggling with their social media presence. Their posts lacked engagement and their visual identity was outdated. I took on the mission of redesigning their identity and increasing their online presence. Using a new visual approach, their business was effectively communicated to the appropriate audience. As a result, their engagement increased tenfold. Click on the card title or thumbnail to view the work I completed for them.</p>
             </div>
           </div>
           <div class="cell cell-work">
-            <div class="por-img" onclick="openLightbox(4);toSlide(1)">
-              <div class="por-img-itself" id="por1"></div>
+            <div class="por-img" onclick="openLightbox(4);toSlide4(1, 6)">
+              <div class="por-img-itself" id="por4"></div>
             </div>
             <div class="cell-work-div">
-              <h4 onclick="openLightbox(4);toSlide(1)">Accruent</h4>
-              <p>I was responsible for the development of courses to teach the end-users how to use Accurent's software. The process included interpreting and editing scripts, image and video editing, instructional design, authoring of Articulate Storyline & Rise courses, and a lot of teamwork and organization. A complete multimedia development experience.</p>
+              <h4 onclick="openLightbox(4);toSlide4(1, 6)">Aletheia Institute</h4>
+              <p>I spent three years working with a non-profit educational organization for which I developed a strong visual identity. During my time there, I created various social media posts, book covers, marketing campaigns, and motion graphics. Additionally, I translated articles and wrote copies for posts. You can check out my portfolio by clicking on the title of this card or the thumbnail.</p>
             </div>
           </div>
           <div class="cell cell-work">
-            <div class="por-img" onclick="openLightbox(5);toSlide(1)">
-              <div class="por-img-itself" id="por1"></div>
+            <div class="por-img" onclick="openLightbox(5);toSlide5(1, 2)">
+              <div class="por-img-itself" id="por5"></div>
             </div>
             <div class="cell-work-div">
-              <h4 onclick="openLightbox(5);toSlide(1)">Accruent</h4>
-              <p>I was responsible for the development of courses to teach the end-users how to use Accurent's software. The process included interpreting and editing scripts, image and video editing, instructional design, authoring of Articulate Storyline & Rise courses, and a lot of teamwork and organization. A complete multimedia development experience.</p>
+              <h4 onclick="openLightbox(5);toSlide5(1, 2)">O Segundo Olhar</h4>
+              <p>As a graphic designer, I often found inspiration for my projects in paintings by different artists. This sparked a passion for art history. So, I embarked on a personal project called "O Segundo Olhar" (The Second Gaze), which consisted of creating video essays about art history and painting exposition. The research and scripting were enjoyable; editing and animating proved to be challenging. Overall, teaching about art history made me learn a lot. You can check out some of the content by clicking on the title of this card or the thumbnail.</p>
+            </div>
+          </div>
+          <div class="cell cell-work">
+            <div class="por-img" onclick="openLightbox(6);toSlide6(1, 2)">
+              <div class="por-img-itself" id="por6"></div>
+            </div>
+            <div class="cell-work-div">
+              <h4 onclick="openLightbox(6);toSlide6(1, 2)">Eventos GOV</h4>
+              <p>The logo for Eventos Gov was designed with a challenging brief from the client. Despite the use of many elements, it turned out to be harmonious and consistent, reflecting the brand's message. Click on the card title or thumbnail to see the final result.</p>
+            </div>
+          </div>
+          <div class="cell cell-work">
+            <div class="por-img" onclick="openLightbox(7);toSlide7(1, 8)">
+              <div class="por-img-itself" id="por7"></div>
+            </div>
+            <div class="cell-work-div">
+              <h4 onclick="openLightbox(7);toSlide7(1, 8)">Reminiscente</h4>
+              <p>As a personal project, I created Reminiscente, a social media profile and page where I share quotes from my philosophy studies. For the visual identity of the page, I aimed to evoke classic philosophy (especially Plato) and ancient knowledge. In just under two days, I designed a logo and visual identity, which turned out to be very pleasant. You can see it by clicking on the title of this card or the thumbnail.</p>
+            </div>
+          </div>
+          <div class="cell cell-work">
+            <div class="por-img" onclick="openLightbox(8);toSlide8(1, 6)">
+              <div class="por-img-itself" id="por8"></div>
+            </div>
+            <div class="cell-work-div">
+              <h4 onclick="openLightbox(8);toSlide8(1, 6)">Presbyterian Church of Caxias do Sul</h4>
+              <p>I volunteered to redesign the visual identity of the Presbyterian Church of Caxias do Sul. I created new logos and social media materials that gave the church a fresh personality and effective communication assets. To see the results, click on the card title or thumbnail.</p>
+            </div>
+          </div>
+          <div class="cell cell-work">
+            <div class="por-img" onclick="openLightbox(9);toSlide9(1, 4)">
+              <div class="por-img-itself" id="por9"></div>
+            </div>
+            <div class="cell-work-div">
+              <h4 onclick="openLightbox(9);toSlide9(1, 4)">Ricardo Marçal</h4>
+              <p>The visual identity of Ricardo Marçal was created with a specific goal in mind. The logo had to include the first letter of his name and represent his expertise in dentistry, particularly in working with composite resin for veneers. The chosen colour palette and social media tone were selected to complement the logo design. Furthermore, I supplied a brand guideline for Ricardo's team. To see the work, click on the card title or thumbnail.</p>
             </div>
           </div>
         </div>
-        <!-- <iframe src="https://articulateusercontent.com/review/items/xmewQI1zOsq_1GxM/story.html" width="980" height="658"></iframe> -->
       </div>
     </main>
 
-    <div id="Lightbox1" class="modal invisible">
-      <div class="close-lightbox" onclick="closeLightbox(1)"></div>
-      <span class="close pointer" onclick="closeLightbox(1)">&times;</span>
-      <div class="modal-content">
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="image-slide" alt="Toy car on the road." />
+   <div id="Lightbox1" class="modal invisible">
+      <span class="close pointer close-iframe" onclick="closeLightbox(1)">×</span>
+      <div class="modal-content modal-iframe">
+        <div class="slide1 iframe">
+          <iframe src="https://articulateusercontent.com/review/items/xmewQI1zOsq_1GxM/story.html"></iframe>
         </div>
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" class="image-slide" alt="Toy car exploring offroad." />
-        </div>    
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" class="image-slide" alt="Toy car in the city." />
-        </div>
-      
-        <div class="previous" onclick="changeSlide(-1)"><a>&#10094;</a></div>
-        <div class="next" onclick="changeSlide(1)"><a>&#10095;</a></div>
       </div>
     </div>
 
-    <div id="Lightbox2" class="modal invisible" onclick="closeLightbox(2)">
-      <span class="close pointer" onclick="closeLightbox(2)">&times;</span>
+    <div id="Lightbox2" class="modal invisible">
+      <div class="close-lightbox" onclick="closeLightbox(2)"></div>
+      <span class="close pointer" onclick="closeLightbox(2)">×</span>
       <div class="modal-content">
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="image-slide" alt="Toy car on the road." />
+        <div class="slide2">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-versah/LogoVertical.jpg" class="image-slide" alt="Versah Logo" />
         </div>
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" class="image-slide" alt="Toy car exploring offroad." />
+        <div class="slide2">
+          <div class="black-bg"></div>
+          <video src="resources/images/p-versah/Logo Animation3.mp4" class="image-slide" autoplay controls  alt="Versah Logo Animation">
         </div>    
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" class="image-slide" alt="Toy car in the city." />
+        <div class="slide2">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-versah/ODLogoVertical.jpg" class="image-slide" alt="OD Logo" />
+        </div>
+        <div class="slide2">
+          <div class="black-bg"></div>
+          <video src="resources/images/p-versah/OD Academy Logo Animation.mp4" autoplay controls class="image-slide" alt="OD Logo Animation">
+        </div>
+        <div class="slide2 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-versah/ReopenWithASplah.jpg" class="image-slide" alt="Social Media Post" />
+        </div>
+        <div class="slide2 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-versah/WhyILoveVersah.jpg" class="image-slide" alt="Social Media Post" />
+        </div>
+        <div class="slide2">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-versah/IMG_20201123_205856744.jpg" class="image-slide" alt="Logo Sketches" />
         </div>
       
-        <div class="previous" onclick="changeSlide(-1)"><a>&#10094;</a></div>
-        <div class="next" onclick="changeSlide(1)"><a>&#10095;</a></div>
+        <div class="previous" onclick="changeSlide2(-1, 7)"><a>⟨</a></div>
+        <div class="next" onclick="changeSlide2(1, 7)"><a>⟩</a></div>
       </div>
     </div>
 
-    <div id="Lightbox3" class="modal invisible" onclick="closeLightbox(3)">
-      <span class="close pointer" onclick="closeLightbox(3)">&times;</span>
+    <div id="Lightbox3" class="modal invisible">
+      <div class="close-lightbox" onclick="closeLightbox(3)"></div>
+      <span class="close pointer" onclick="closeLightbox(3)">×</span>
       <div class="modal-content">
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="image-slide" alt="Toy car on the road." />
+        <div class="slide3 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-techfer/PostProdutoEscuro.jpg" class="image-slide" alt="Versah Logo" />
         </div>
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" class="image-slide" alt="Toy car exploring offroad." />
-        </div>    
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" class="image-slide" alt="Toy car in the city." />
+        <div class="slide3 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-techfer/Frase002.jpg" class="image-slide" alt="OD Logo" />
+        </div>
+        <div class="slide3 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-techfer/PostData003.jpg" class="image-slide" alt="Social Media Post" />
+        </div>
+        <div class="slide3 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-techfer/PostClaro02.jpg" class="image-slide" alt="Social Media Post" />
+        </div>
+        <div class="slide3 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-techfer/130191227_2622614701197169_5837521897215790181_n.jpeg" class="image-slide" alt="Logo Sketches" />
+        </div>
+        <div class="slide3 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-techfer/132557361_2668480283277277_6736106939759889490_n.jpeg" class="image-slide" alt="Logo Sketches" />
         </div>
       
-        <div class="previous" onclick="changeSlide(-1)"><a>&#10094;</a></div>
-        <div class="next" onclick="changeSlide(1)"><a>&#10095;</a></div>
+        <div class="previous" onclick="changeSlide3(-1, 6)"><a>⟨</a></div>
+        <div class="next" onclick="changeSlide3(1, 6)"><a>⟩</a></div>
       </div>
     </div>
 
-    <div id="Lightbox4" class="modal invisible" onclick="closeLightbox(4)">
-      <span class="close pointer" onclick="closeLightbox(4)">&times;</span>
+    <div id="Lightbox4" class="modal invisible">
+      <div class="close-lightbox" onclick="closeLightbox(4)"></div>
+      <span class="close pointer" onclick="closeLightbox(4)">×</span>
       <div class="modal-content">
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="image-slide" alt="Toy car on the road." />
+        <div class="slide4 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-aletheia/Logo.jpg" class="image-slide" alt="Versah Logo" />
         </div>
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" class="image-slide" alt="Toy car exploring offroad." />
-        </div>    
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" class="image-slide" alt="Toy car in the city." />
+        <div class="slide4 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-aletheia/Prancheta 1.jpg" class="image-slide" alt="OD Logo" />
+        </div>
+        <div class="slide4 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-aletheia/Prancheta 2.jpg" class="image-slide" alt="Social Media Post" />
+        </div>
+        <div class="slide4 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-aletheia/Prancheta 3.jpg" class="image-slide" alt="Social Media Post" />
+        </div>
+        <div class="slide4 square-slide">
+          <div class="black-bg"></div>
+          <video src="resources/images/p-aletheia/Vídeo Final c_ Som.mp4" class="image-slide" controls autoplay  alt="Versah Logo Animation">
+      </div>    
+        <div class="slide4 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-aletheia/Retrowave.jpeg" class="image-slide" alt="Logo Sketches" />
         </div>
       
-        <div class="previous" onclick="changeSlide(-1)"><a>&#10094;</a></div>
-        <div class="next" onclick="changeSlide(1)"><a>&#10095;</a></div>
+        <div class="previous" onclick="changeSlide4(-1, 6)"><a>⟨</a></div>
+        <div class="next" onclick="changeSlide4(1, 6)"><a>⟩</a></div>
       </div>
     </div>
 
-    <div id="Lightbox5" class="modal invisible" onclick="closeLightbox(5)">
-      <span class="close pointer" onclick="closeLightbox(5)">&times;</span>
+    <div id="Lightbox5" class="modal invisible">
+      <div class="close-lightbox" onclick="closeLightbox(5)"></div>
+      <span class="close pointer" onclick="closeLightbox(5)">×</span>
       <div class="modal-content">
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="image-slide" alt="Toy car on the road." />
+        <div class="slide5 video-slide">
+          <video src="resources/images/p-segundo/Main (1).mp4" class="image-slide" controls autoplay alt="Versah Logo Animation">
         </div>
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" class="image-slide" alt="Toy car exploring offroad." />
-        </div>    
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" class="image-slide" alt="Toy car in the city." />
+        <div class="slide5 video-slide">
+          <video src="resources/images/p-segundo/re1 (1).mp4" class="image-slide" controls autoplay alt="Versah Logo Animation">
         </div>
-      
-        <div class="previous" onclick="changeSlide(-1)"><a>&#10094;</a></div>
-        <div class="next" onclick="changeSlide(1)"><a>&#10095;</a></div>
+        <div class="previous button-video" onclick="changeSlide5(-1, 2)"><a>⟨</a></div>
+        <div class="next button-video" onclick="changeSlide5(1, 2)"><a>⟩</a></div>
       </div>
     </div>
 
-    <div id="Lightbox6" class="modal invisible" onclick="closeLightbox(6)">
-      <span class="close pointer" onclick="closeLightbox(6)">&times;</span>
+    <div id="Lightbox6" class="modal invisible">
+      <div class="close-lightbox" onclick="closeLightbox(6)"></div>
+      <span class="close pointer" onclick="closeLightbox(6)">×</span>
       <div class="modal-content">
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="image-slide" alt="Toy car on the road." />
+        <div class="slide6">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-gov/Logo Horizontal Claro.png" class="image-slide" alt="Versah Logo" />
         </div>
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" class="image-slide" alt="Toy car exploring offroad." />
-        </div>    
-        <div class="slide">
-            <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" class="image-slide" alt="Toy car in the city." />
+        <div class="slide6 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-gov/Logo Vertical Claro.png" class="image-slide" alt="Versah Logo" />
         </div>
-      
-        <div class="previous" onclick="changeSlide(-1)"><a>&#10094;</a></div>
-        <div class="next" onclick="changeSlide(1)"><a>&#10095;</a></div>
+        <div class="previous" onclick="changeSlide6(-1, 2)"><a>⟨</a></div>
+        <div class="next" onclick="changeSlide6(1, 2)"><a>⟩</a></div>
+      </div>
+    </div>
+
+    <div id="Lightbox7" class="modal invisible">
+      <div class="close-lightbox" onclick="closeLightbox(7)"></div>
+      <span class="close pointer" onclick="closeLightbox(7)">×</span>
+      <div class="modal-content">
+        <div class="slide7 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-reminiscente/Reminiscente-Logo.jpg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="slide7 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-reminiscente/0014.jpg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="slide7 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-reminiscente/0018.jpg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="slide7 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-reminiscente/0021.jpg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="slide7 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-reminiscente/0024.jpg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="slide7 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-reminiscente/0027.jpg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="slide7 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-reminiscente/0030.jpg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="slide7 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-reminiscente/0040.jpg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="previous" onclick="changeSlide7(-1, 8)"><a>⟨</a></div>
+        <div class="next" onclick="changeSlide7(1, 8)"><a>⟩</a></div>
+      </div>
+    </div>
+
+    <div id="Lightbox8" class="modal invisible">
+      <div class="close-lightbox" onclick="closeLightbox(8)"></div>
+      <span class="close pointer" onclick="closeLightbox(8)">×</span>
+      <div class="modal-content">
+        <div class="slide8 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-ipcxs/01.jpeg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="slide8 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-ipcxs/02.jpeg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="slide8 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-ipcxs/03.jpeg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="slide8 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-ipcxs/04.jpeg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="slide8 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-ipcxs/05.jpeg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="slide8 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-ipcxs/06.jpeg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="previous" onclick="changeSlide8(-1, 6)"><a>⟨</a></div>
+        <div class="next" onclick="changeSlide8(1, 6)"><a>⟩</a></div>
+      </div>
+    </div>
+
+    <div id="Lightbox9" class="modal invisible">
+      <div class="close-lightbox" onclick="closeLightbox(9)"></div>
+      <span class="close pointer" onclick="closeLightbox(9)">×</span>
+      <div class="modal-content">
+        <div class="slide9">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-marcal/01.jpg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="slide9 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-marcal/02.jpg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="slide9 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-marcal/03.jpg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="slide9 square-slide">
+          <div class="black-bg"></div>
+          <img src="resources/images/p-marcal/04.jpg" class="image-slide" alt="Versah Logo" />
+        </div>
+        <div class="previous" onclick="changeSlide9(-1, 4)"><a>⟨</a></div>
+        <div class="next" onclick="changeSlide9(1, 4)"><a>⟩</a></div>
       </div>
     </div>
     
     <footer>
           <span>© Vitor Beuren Andrade. Coded in 2023.</span>
-          <a href="https://www.linkedin.com/in/vitorbandrade/" id="linkedin-logo"><img src="Resources/Images/Daco_2714495.png"></a>
+          <a onclick="gotoLinkedin()" style="cursor:pointer;" id="linkedin-logo"><img src="Resources/Images/Daco_2714495.png"></a>
     </footer>
+
+    <div id="contact-form" class="invisible">
+    <div class="close-contact" onclick="closeForm()"></div>
+      <div id="form-container">
+        <div class="img-form">
+        </div>
+        <div class="contact-form">
+          <div class="title-close">
+            <h4>Contact Me</h4>
+            <div class="close-form" onclick="closeForm()">×</div>
+          </div>
+          <form>
+            <div class="form-subcontainer">
+              <div class="name"><label for="name">Name</label>
+              <input
+                name="name"
+                type="text"
+                placeholder="Your name..."></div>
+              <div class="email-div"><label for="email">E-Mail</label>
+              <input
+                name="email"
+                type="text"
+                placeholder="Your e-mail..."></div>
+              </div>
+            <label for="subject">Subject</label>
+            <input
+              name="subject"
+              type="text"
+              placeholder="You want to talk about...">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              type="text"
+              placeholder="Write something..."></textarea>
+          </form>
+            <a href="form" class="button-form inline-block button-bullet">
+              <div>SUBMIT</div></a>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/textFit.js"></script>
-  <script src="Resources/Script/nav.js"></script>
-  <script src="Resources/Script/form.js"></script>
+  <script src="resources/script/nav.js"></script>
+  <script src="resources/script/lightbox.js"></script>
+  <script src="resources/script/contact.js"></script>
 </html>

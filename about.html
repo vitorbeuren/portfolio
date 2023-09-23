@@ -30,8 +30,7 @@
   </head>
 
   <body id="ind_cover_bg_image">
-
-    <div class="darkened_body" onclick="closeNav()"></div>
+    <div class="darkened_body" id="darkened_body" onclick="closeNav()"></div>
     <header>
       <nav>
         <div id="header-logo">
@@ -39,12 +38,12 @@
             ><img src="Resources/Images/mountain-b.png"
           /></a>
         </div>
-        <ul class="nav_links">
+        <ul class="nav_links"> 
           <li><a href="services.html" class="other_pages">Services</a></li>
           <li><a href="portfolio.html" class="other_pages">Portfolio</a></li>
-          <li><a href="about.html" class="other_pages">About</a></li>
+          <li><a href="about.html" class="current_page">About</a></li>
           <li id="last_nav_li">
-            <a href="contact.html" class="other_pages" id="last_nav"
+            <a onclick="openForm()" class="contact" id="last_nav"
               >Contact</a
             >
           </li>
@@ -61,7 +60,7 @@
       <div id="content">
       <div id="text-div">
         <h3 id="about-h3">Who am I?</h3>
-        <p>My name is Vitor Beuren Andrade (24), I am a Brazilian multimedia developer living in Porto, Portugal, and studying philosophy in the University of Porto. It is said that Socrates worked as a mason and the Apostle Paul built tents; following their example, in my turn, I develop media — video, motion graphics, images, courses, graphic material etc.</p>
+        <p id="first-p">My name is Vitor Beuren Andrade (24), I am a Brazilian multimedia developer living in Porto, Portugal, and studying philosophy in the University of Porto. It is said that Socrates worked as a mason and the Apostle Paul built tents; following their example, in my turn, I develop media — video, motion graphics, images, courses, graphic material etc.</p>
         <p>There is nothing unworthy about working for money — those two caracters I mentioned did that. Even so, I am close to multimedia development since I was a teenager, feeling very "at home" and happy doing my job. Thus, my goal is always to produce the best regarding consistency and quality, always striving for excellency.</p>
       </div>
       <div id="image-div"></div>
@@ -70,10 +69,50 @@
 
     <footer>
           <span>© Vitor Beuren Andrade. Coded in 2023.</span>
-          <a href="https://www.linkedin.com/in/vitorbandrade/" id="linkedin-logo"><img src="Resources/Images/linkedin-b.png"></a>
+          <a onclick="gotoLinkedin()" style="cursor:pointer;" id="linkedin-logo"><img src="Resources/Images/Daco_2714495.png"></a>
     </footer>
+    <div id="contact-form" class="invisible">
+      <div class="close-contact" onclick="closeForm()"></div>
+        <div id="form-container">
+          <div class="img-form">
+          </div>
+          <div class="contact-form">
+            <div class="title-close">
+              <h4>Contact Me</h4>
+              <div class="close-form" onclick="closeForm()">×</div>
+            </div>
+            <form>
+              <div class="form-subcontainer">
+                <div class="name"><label for="name">Name</label>
+                <input
+                  name="name"
+                  type="text"
+                  placeholder="Your name..."></div>
+                <div class="email-div"><label for="email">E-Mail</label>
+                <input
+                  name="email"
+                  type="text"
+                  placeholder="Your e-mail..."></div>
+                </div>
+              <label for="subject">Subject</label>
+              <input
+                name="subject"
+                type="text"
+                placeholder="You want to talk about...">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                type="text"
+                placeholder="Write something..."></textarea>
+            </form>
+              <a href="form" class="button-form inline-block button-bullet">
+                <div>SUBMIT</div></a>
+          </div>
+        </div>
+      </div>
   </body>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/textFit.js"></script>
   <script src="Resources/Script/nav.js"></script>
   <script src="Resources/Script/form.js"></script>
+  <script src="Resources/Script/contact.js"></script>
 </html>

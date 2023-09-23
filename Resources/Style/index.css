@@ -1,5 +1,11 @@
 /* \/ MAIN BG IMAGE \/ */
 
+.nav_links .contact{
+  font-family: "hk_groteskmedium", Helvetica, sans-serif;
+  font-weight: normal;
+  color:#05F26C;
+}
+
 main {
   height: 85vh;
   display: flex;
@@ -55,6 +61,7 @@ main {
   background-color: #03A64A;
   box-shadow: inset 0 0 50px 20px #03A64A;
   transition: all .6s;
+  cursor: pointer;
 }
 
 .main-button:hover {
@@ -82,6 +89,10 @@ main {
 
   #index-buttons {
     grid-auto-flow: row;
+  }
+
+  .contact{
+    color: #03A64A;
   }
 }
 

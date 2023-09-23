@@ -8,6 +8,12 @@ body{
     color: #0D0D0D;
 }
 
+.nav_links .contact{
+    font-family: "hk_groteskmedium", Helvetica, sans-serif;
+    font-weight: normal;
+    color:#03A64A;
+  }
+
 .nav_links li::after{
     background-color: #03A64A;
 }
@@ -60,11 +66,18 @@ p{
 
 #text-div{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     max-width: 55%;
     height: 60vh;
     transition: all 0.3s ease-in-out;
+}
+
+#text-div h3{
+    margin-bottom: 5vh;
+}
+
+#first-p{
+    margin-bottom: 2vh;
 }
 
 #image-div {
@@ -87,7 +100,7 @@ p{
     }
   }
 
-  @media screen and (max-width: 975px) {
+  @media screen and (max-width: 990px) {
     #about-h3{
         font-size: 24px;
     }
