@@ -24,19 +24,19 @@
     <link href="Resources/Fonts/SansFont2/stylesheet.css" rel="stylesheet" />
     <link href="Resources/Fonts/SansFont1/stylesheet.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="Resources/Style/main.css" /> 
-    <link rel="stylesheet" type="text/css" href="Resources/Style/index.css" />
+    <link rel="stylesheet" type="text/css" href="Resources/Style/services.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   </head>
 
-  <body>
+  <body id="ind_cover_bg_image">
 
-    <div class="darkened_body" onclick="closeNav()"></div>
+    <div class="darkened_body" id="darkened_body" onclick="closeNav()"></div>
     <header>
       <nav>
         <div id="header-logo">
           <a href="index.html"
-            ><img src="Resources/Images/logo.png"
+            ><img src="Resources/Images/mountain-b.png"
           /></a>
         </div>
         <ul class="nav_links">
@@ -44,7 +44,7 @@
           <li><a href="portfolio.html" class="other_pages">Portfolio</a></li>
           <li><a href="about.html" class="other_pages">About</a></li>
           <li id="last_nav_li">
-            <a href="contact.html" class="other_pages" id="last_nav"
+            <a onclick="openForm()" class="contact" id="last_nav"
               >Contact</a
             >
           </li>
@@ -56,8 +56,128 @@
         </div>
       </nav>
     </header>
-</body>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/textFit.js"></script>
-<script src="Resources/Script/nav.js"></script>
-<script src="Resources/Script/form.js"></script>
+
+   <main>
+      <div id="content">
+        <h3 id="about-h3">How Can I Serve You?</h3>
+        <div class="grid grid-services">
+          <div class="cell cell-services cell-services-margin">
+            <img src="Resources/Images/course.png">
+            <div>
+              <h4>E-Learning Authoring</h4>
+              <p>The development of a virtual course can vary from text formatting, or video editing only, to the sum of multiple formats of media put together. As an e-learning developer, one has to be prepared to be a video editor, an audio editor, an image editor, and a course author, to exercise coding skills and pedagogical knowledge. I have been through these fields individually and now use them together for course authoring.</p>
+            </div>
+          </div>
+          <div class="cell cell-services">
+            <img src="Resources/Images/video-editing.png">
+            <div>
+              <h4>Video Editing</h4>
+              <p>When it comes to video editing, it's not simply a matter of putting together images and audio and pushing a button for the final product. While templates can help, effective video editing requires careful consideration of the intended objective. This includes selecting appropriate materials, determining the right pace, tonality, music, color, and format. Whether it's a course subject or a product advertisement, the ultimate goal is to convey the intended message.</p>
+            </div>
+          </div>
+          <div class="cell cell-services cell-services-margin">
+            <img src="Resources/Images/design.png">
+            <div>
+              <h4>Graphic Design</h4>
+              <p>The field of graphic design is vast and can cater to different requirements. I have had the opportunity to work on multiple projects related to developing visual identities, and every project has been a unique experience, involving the creation of logos, business cards, social media templates and profile media, font and colour selection, and brand guidelines. I consider graphic design to be a comprehensive and personalized process that serves both the client and their customers.</p>
+            </div>
+          </div>
+          <div class="cell cell-services">
+            <img src="Resources/Images/motion.png">
+            <div>
+              <h4>Motion Design</h4>
+              <p>Creating motion graphics can be a demanding task, but the satisfaction of overcoming the challenge is equally rewarding. This process involves breathing life into a brand's visual identity, allowing it to make a stronger impact in video content across various platforms.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="about-h3">What Tools Do I Use?</h3>
+        <div class="grid grid-tools">
+          <div class="cell cell-tool">
+            <img src="Resources/Images/logo-articulate.jpeg" alt="Articulate">
+            <h4>Articulate Services</h4></div>
+          <div class="cell cell-tool">
+            <img src="Resources/Images/logo-storyline.webp" alt="Articulate Storyline">
+            <h4>Articulate Storyline</h4></div>
+          <div class="cell cell-tool">
+            <img src="Resources/Images/logo-rise.png" alt="Articulate Rise">
+            <h4>Articulate Rise</h4></div>
+          <div class="cell cell-tool">
+            <img src="Resources/Images/logo-ae.png" alt="Adobe After Effects">
+            <h4>Adobe After Effects</h4></div>
+          <div class="cell cell-tool">
+            <img src="Resources/Images/logo-pr.png" alt="Adobe Premiere Pro">
+            <h4>Adobe Premiere Pro</h4></div>
+          <div class="cell cell-tool">
+            <img src="Resources/Images/logo-au.png" alt="Adobe Audition">
+            <h4>Adobe Audition</h4></div>
+          <div class="cell cell-tool">
+            <img src="Resources/Images/logo-ps.png" alt="Adobe Photoshop">
+            <h4>Adobe Photoshop</h4></div>
+          <div class="cell cell-tool">
+            <img src="Resources/Images/logo-lr.png" alt="Adobe Lightroom">
+            <h4>Adobe Lightroom</h4></div>
+          <div class="cell cell-tool">
+            <img src="Resources/Images/logo-ai.png" alt="Adobe Illustrator">
+            <h4>Adobe Illustrator</h4></div>
+          <div class="cell cell-tool">
+            <img src="Resources/Images/logo-key.png" alt="Apple Keynote">
+            <h4>Apple Keynote</h4></div>
+          <div class="cell cell-tool">
+            <img src="Resources/Images/logo-word.png" alt="Microsoft Word">
+            <h4>Microsoft Word</h4></div>
+          <div class="cell cell-tool">
+            <img src="Resources/Images/logo-pp.svg" alt="Microsoft Power Point">
+            <h4>Microsoft Power Point</h4></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+          <span>© Vitor Beuren Andrade. Coded in 2023.</span>
+          <a onclick="gotoLinkedin()" style="cursor:pointer;" id="linkedin-logo"><img src="Resources/Images/Daco_2714495.png"></a>
+    </footer>
+    <div id="contact-form" class="invisible">
+      <div class="close-contact" onclick="closeForm()"></div>
+        <div id="form-container">
+          <div class="img-form">
+          </div>
+          <div class="contact-form">
+            <div class="title-close">
+              <h4>Contact Me</h4>
+              <div class="close-form" onclick="closeForm()">×</div>
+            </div>
+            <form>
+              <div class="form-subcontainer">
+                <div class="name"><label for="name">Name</label>
+                <input
+                  name="name"
+                  type="text"
+                  placeholder="Your name..."></div>
+                <div class="email-div"><label for="email">E-Mail</label>
+                <input
+                  name="email"
+                  type="text"
+                  placeholder="Your e-mail..."></div>
+                </div>
+              <label for="subject">Subject</label>
+              <input
+                name="subject"
+                type="text"
+                placeholder="You want to talk about...">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                type="text"
+                placeholder="Write something..."></textarea>
+            </form>
+              <a href="form" class="button-form inline-block button-bullet">
+                <div>SUBMIT</div></a>
+          </div>
+        </div>
+      </div>
+  </body>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/textFit.js"></script>
+  <script src="Resources/Script/nav.js"></script>
+  <script src="Resources/Script/contact.js"></script>
 </html>

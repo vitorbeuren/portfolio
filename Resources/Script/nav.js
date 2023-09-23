@@ -55,26 +55,6 @@ window.addEventListener("scroll", function () {
 
 textFit(document.querySelectorAll(".contacts"));
 
-function gotoNoivoWpp() {
-  window.open("https://api.whatsapp.com/send?phone=5554999041506", "_blank");
-}
-
-function gotoNoivoMail() {
-  location.href = "mailto:vitorbeuren@gmail.com";
-}
-
-function gotoNoivoTelegram() {
-  window.open("https://t.me/VitorBeuren", "_blank");
-}
-
-function gotoNoivaWpp() {
-  window.open("https://api.whatsapp.com/send?phone=556199260911", "_blank");
-}
-
-function gotoNoivaMail() {
-  location.href = "mailto:naiza.lacerda@gmail.com";
-}
-
-function gotoNoivaTelegram() {
-  window.open("https://t.me/naizamart", "_blank");
+function gotoLinkedin() {
+  window.open("https://www.linkedin.com/in/vitorbandrade/", "_blank");
 }
