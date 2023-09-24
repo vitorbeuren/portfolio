@@ -2,7 +2,7 @@
 
 $errors = '';
 
-$myemail = 'vitorbeuren@hotmail.com';
+$myemail = 'contact@vitorbeuren.com';
 
 if(empty($_POST['name'])  || 
    empty($_POST['email']) || 
