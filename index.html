@@ -26,8 +26,7 @@
     <link rel="stylesheet" type="text/css" href="Resources/Style/main.css" /> 
     <link rel="stylesheet" type="text/css" href="Resources/Style/index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
   </head>
 
   <body id="ind_cover_bg_image">
@@ -84,7 +83,7 @@
               <h4>Contact Me</h4>
               <div class="close-form" onclick="closeForm()">×</div>
             </div>
-            <form method="post" id="form-for-script" name="contactform" action="form-to-email.php">
+            <form method="POST" id="form-for-script" name="contactform" action="fcf-assets/fcf.process.php">
               <div class="form-subcontainer">
                 <div class="name"><label for="name">Name*</label>
                 <input
@@ -111,6 +110,47 @@
               <input style="cursor:pointer" class="button-form inline-block button-bullet" type="submit" name="submit" value="SUBMIT">
           </div>
         </div>
+        <script>
+          const constraints = {
+              name: {
+                  presence: { allowEmpty: false }
+              },
+              email: {
+                  presence: { allowEmpty: false },
+                  email: true
+              },
+              subject: {
+                  presence: { allowEmpty: false },
+                  subject: true
+              },
+              message: {
+                  presence: { allowEmpty: false }
+              }
+          };
+       
+          const form = document.getElementById('form-for-script');
+       
+          form.addEventListener('submit', function (event) {
+            const formValues = {
+                name: form.elements.name.value,
+                email: form.elements.email.value,
+                subject: form.elements.subject.value,
+                message: form.elements.message.value
+            };
+       
+            const errors = validate(formValues, constraints);
+       
+            if (errors) {
+              event.preventDefault();
+              const errorMessage = Object
+                  .values(errors)
+                  .map(function (fieldValues) { return fieldValues.join(', ')})
+                  .join("\n");
+       
+              alert(errorMessage);
+            }
+          }, false);
+       </script>
       </div>
   </body>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/textFit.js"></script>
