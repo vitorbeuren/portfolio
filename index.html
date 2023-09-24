@@ -85,29 +85,30 @@
             </div>
             <form method="POST" id="form-for-script" name="contactform" action="fcf-assets/fcf.process.php">
               <div class="form-subcontainer">
-                <div class="name"><label for="name">Name*</label>
+                <div class="name"><label for="Name">Name*</label>
                 <input
-                  name="name"
+                  data-validate-field="Name"
+                  id="Name"
+                  name="Name"
                   type="text"
                   placeholder="Your name..." required></div>
-                <div class="email-div"><label for="email">E-Mail*</label>
+                <div class="email-div"><label for="Email">E-Mail*</label>
                 <input
-                  name="email"
-                  type="text"
+                  data-validate-field="Email"
+                  type="email"
+                  id="Email"
+                  name="Email"
                   placeholder="Your e-mail..." required></div>
                 </div>
-              <label for="subject">Subject*</label>
-              <input
-                name="subject"
-                type="text"
-                placeholder="You want to talk about..." required>
-              <label for="message">Message*</label>
+              <label for="Message">Message*</label>
               <textarea
-                name="message"
+                data-validate-field="Message"
+                id="Message" 
+                name="Message"
                 type="text"
                 placeholder="Write something..." required></textarea>
             </form>
-              <input style="cursor:pointer" class="button-form inline-block button-bullet" type="submit" name="submit" value="SUBMIT">
+              <input style="cursor:pointer" id="fcf-button" class="button-form inline-block button-bullet" type="submit" name="submit" value="SUBMIT">
           </div>
         </div>
         <script>
