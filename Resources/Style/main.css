@@ -586,8 +586,13 @@ input:focus, textarea:focus{
 }
 
 .button-form:hover {
+  border: 0px #3b3b3b00;
   background-color: #05F26C;
   transition: background-color .6s;
+}
+
+.button-form:focus {
+  border: 0px #3b3b3b00;
 }
 
 @media screen and (max-width: 768px) {
