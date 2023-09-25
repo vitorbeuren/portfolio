@@ -109,7 +109,7 @@
                 type="text"
                 placeholder="Write something..." required></textarea>
             </form>
-              <input style="cursor:pointer" id="fcf-button" class="button-form inline-block button-bullet" type="submit" name="submit" value="SUBMIT">
+              <input onclick="sendEmail()" style="cursor:pointer" id="fcf-button" class="button-form inline-block button-bullet" type="submit" name="submit" value="SUBMIT">
           </div>
         </div>
       </div>
