@@ -29,7 +29,7 @@ if(isset($_POST['name']) && isset($_POST['email'])){
     $mail->Subject = ("$email ($subject)");
     $mail->Body = $body;
 
-    if($mail->send()){
+    /* if($mail->send()){
         $status = "success";
         $response = "Email is sent!";
     }
@@ -39,5 +39,5 @@ if(isset($_POST['name']) && isset($_POST['email'])){
         $response = "Something is wrong: <br>" . $mail->ErrorInfo;
     }
 
-    exit(json_encode(array("status" => $status, "response" => $response)));
+    exit(json_encode(array("status" => $status, "response" => $response))); */
 }
