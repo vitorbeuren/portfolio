@@ -6,7 +6,7 @@ function sendEmail() {
     if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(message)) {
         $.ajax({
            url: 'sendEmail.php',
-           method: 'POST',
+           method: 'GET',
            dataType: 'json',
            contentType: "application/json; charset=utf-8",
            data: {
