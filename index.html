@@ -83,7 +83,7 @@
               <h4>Contact Me</h4>
               <div class="close-form" onclick="closeForm()">×</div>
             </div>
-            <form method="POST" id="form-for-script" name="contactform">
+            <form method="POST" id="form-for-script" name="contactform" action="sendEmail.php">
               <div class="form-subcontainer">
                 <div class="name"><label for="Name">Name*</label>
                 <input
@@ -108,7 +108,7 @@
                 type="text"
                 placeholder="Write something..." required></textarea>
             </form>
-              <input onclick="sendEmail()" style="cursor:pointer" id="fcf-button" class="button-form inline-block button-bullet" type="submit" name="submit" value="SUBMIT">
+              <input style="cursor:pointer" id="fcf-button" class="button-form inline-block button-bullet" type="submit" name="submit" value="SUBMIT">
           </div>
         </div>
       </div>
