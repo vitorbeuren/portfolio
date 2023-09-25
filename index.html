@@ -27,6 +27,24 @@
     <link rel="stylesheet" type="text/css" href="Resources/Style/index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+
+    <system.webServer>
+      <modules runAllManagedModulesForAllRequests="true" >
+        <remove name="WebDAVModule"/>
+      </modules>
+      <handlers accessPolicy="Read, Execute, Script">
+        <remove name="WebDAV" />
+        <remove name="ExtensionlessUrlHandler-Integrated-4.0" />
+        <remove name="OPTIONSVerbHandler" />
+        <remove name="TRACEVerbHandler" />
+    
+        <add name="ExtensionlessUrlHandler-Integrated-4.0" path="*."
+             verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS"
+             type="System.Web.Handlers.TransferRequestHandler"
+             preCondition="integratedMode,runtimeVersionv4.0" />
+      </handlers>
+     </system.webServer>
+
   </head>
 
   <body id="ind_cover_bg_image">
