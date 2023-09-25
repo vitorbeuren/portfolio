@@ -8,6 +8,7 @@ function sendEmail() {
            url: 'sendEmail.php',
            method: 'POST',
            dataType: 'json',
+           contentType: "application/json; charset=utf-8",
            data: {
                name: name.val(),
                email: email.val(),
