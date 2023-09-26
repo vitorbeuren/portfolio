@@ -9,8 +9,19 @@ function openForm() {
 
 	form.style.display = 'flex';
 	window.setTimeout(opacityForm, 0);
-	document.getElementById('darkened_body').classList.toggle("darken");
-	document.getElementById('ind_cover_bg_image').classList.toggle("no_scroll");
+	
+	const body = document.getElementsByClassName("darkened_body");
+	var bodyClasses = [].slice.apply(body[0].classList);
+
+	if(!bodyClasses.includes('nav-on')){
+		document.getElementsByClassName("darkened_body")[0].classList.add("darken");}
+
+	const bodyBlock = document.getElementsByTagName("body");
+	var bodyBlockClasses = [].slice.apply(body[0].classList);
+	
+	if(!bodyBlockClasses.includes('nav-on')){
+		document.getElementsByTagName("body")[0].classList.add("no_scroll");}
+
 };
 
 function closeForm() {
@@ -24,6 +35,17 @@ function closeForm() {
 	form.classList.add("invisible");
 	form.classList.remove("toggle-opacity");
 	window.setTimeout(opacityForm, 300);
-    document.getElementById('darkened_body').classList.toggle("darken");
-    document.getElementById('ind_cover_bg_image').classList.toggle("no_scroll");
+
+
+	const body = document.getElementsByClassName("darkened_body");
+	var bodyClasses = [].slice.apply(body[0].classList);
+
+	if(!bodyClasses.includes('nav-on')){
+		document.getElementsByClassName("darkened_body")[0].classList.remove("darken");}
+
+	const bodyBlock = document.getElementsByTagName("body");
+	var bodyBlockClasses = [].slice.apply(body[0].classList);
+	
+	if(!bodyBlockClasses.includes('nav-on')){
+		document.getElementsByTagName("body")[0].classList.remove("no_scroll");}
 };

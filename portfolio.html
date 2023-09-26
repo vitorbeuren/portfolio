@@ -398,43 +398,30 @@
     </footer>
 
     <div id="contact-form" class="invisible">
-    <div class="close-contact" onclick="closeForm()"></div>
-      <div id="form-container">
-        <div class="img-form">
-        </div>
-        <div class="contact-form">
-          <div class="title-close">
-            <h4>Contact Me</h4>
-            <div class="close-form" onclick="closeForm()">×</div>
+      <div class="close-contact" onclick="closeForm()"></div>
+        <div id="form-container">
+          <div class="img-form">
           </div>
-          <form>
-            <div class="form-subcontainer">
-              <div class="name"><label for="name">Name</label>
-              <input
-                name="name"
-                type="text"
-                placeholder="Your name..."></div>
-              <div class="email-div"><label for="email">E-Mail</label>
-              <input
-                name="email"
-                type="text"
-                placeholder="Your e-mail..."></div>
-              </div>
-            <label for="subject">Subject</label>
-            <input
-              name="subject"
-              type="text"
-              placeholder="You want to talk about...">
-            <label for="message">Message</label>
-            <textarea
-              name="message"
-              type="text"
-              placeholder="Write something..."></textarea>
-          </form>
-            <a href="form" class="button-form inline-block button-bullet">
-              <div>SUBMIT</div></a>
+          <div class="contact-form">
+            <div class="title-close">
+              <h4>Contact Me</h4>
+              <div class="close-form" onclick="closeForm()">×</div>
+            </div>
+            <div class="contact-info-container">
+            <div class="contact-info">
+              <h3>Whatsapp</h3>
+                <p>You can contact me through Whatsapp. To do so, you can manually message me through (+351) 914 215 825, or click the following button to open the chat with me:</p>
+                <a class="button-form" onclick="gotoWhatsapp()">Open Whatsapp</a>
+              <h3>E-mail</h3>
+                <p>You can directly e-mail me. To do so, you can manually send an e-mail to contact@vitorbeuren.com, or click the following button to open the e-mail client:</p>
+                <a class="button-form" onclick="gotoEmail()">Open E-mail</a>
+              <h3 class="linkedin-none">LinkedIn</h3>
+                <p class="linkedin-none">You can talk to me through LinkedIn. To do so, you can click the following link to go right to my profile:</p>
+                <a class="button-form last-info-button linkedin-none" onclick="gotoLinkedin()">Open LinkedIn</a>
+            </div>
+          </div>
+          </div>
         </div>
-      </div>
     </div>
   </body>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/textFit.js"></script>

@@ -20,8 +20,12 @@ function navSlide() {
     burger.classList.toggle("toggle");
     //Body Darken
     body.classList.toggle("darken");
+    // Check Nav
+    body.classList.toggle("nav-on");
     //Block Scroll
     bodyBlock.classList.toggle("no_scroll");
+    //Check Nav
+    bodyBlock.classList.toggle("nav-on");
   });
 
   body.addEventListener("click", () => {
@@ -31,6 +35,8 @@ function navSlide() {
     burger.classList.toggle("toggle");
     //Body Darken
     body.classList.toggle("darken");
+    // Check Nav
+    body.classList.toggle("nav-on");
     //Animate Links
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
@@ -41,6 +47,8 @@ function navSlide() {
     });
     //Block Scroll
     bodyBlock.classList.toggle("no_scroll");
+    //Check Nav
+    bodyBlock.classList.toggle("nav-on");
   });
 }
 
@@ -57,4 +65,12 @@ textFit(document.querySelectorAll(".contacts"));
 
 function gotoLinkedin() {
   window.open("https://www.linkedin.com/in/vitorbandrade/", "_blank");
+}
+
+function gotoWhatsapp() {
+  window.open("https://web.whatsapp.com/send/?phone=351914215825", "_blank");
+}
+
+function gotoEmail() {
+  window.open("mailto:contact@vitorbeuren.com", "_blank");
 }

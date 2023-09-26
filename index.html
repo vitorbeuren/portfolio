@@ -26,28 +26,10 @@
     <link rel="stylesheet" type="text/css" href="Resources/Style/main.css" /> 
     <link rel="stylesheet" type="text/css" href="Resources/Style/index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-
-    <system.webServer>
-      <modules runAllManagedModulesForAllRequests="true" >
-        <remove name="WebDAVModule"/>
-      </modules>
-      <handlers accessPolicy="Read, Execute, Script">
-        <remove name="WebDAV" />
-        <remove name="ExtensionlessUrlHandler-Integrated-4.0" />
-        <remove name="OPTIONSVerbHandler" />
-        <remove name="TRACEVerbHandler" />
-    
-        <add name="ExtensionlessUrlHandler-Integrated-4.0" path="*."
-             verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS"
-             type="System.Web.Handlers.TransferRequestHandler"
-             preCondition="integratedMode,runtimeVersionv4.0" />
-      </handlers>
-     </system.webServer>
 
   </head>
 
-  <body id="ind_cover_bg_image">
+  <body id="ind_cover_bg_image" class="no-nav">
     <div class="darkened_body" id="darkened_body" onclick="closeNav()"></div>
     <header>
       <nav>
@@ -101,38 +83,24 @@
               <h4>Contact Me</h4>
               <div class="close-form" onclick="closeForm()">×</div>
             </div>
-            <form method="POST" id="form-for-script" name="contactform" action="sendEmail.php">
-              <div class="form-subcontainer">
-                <div class="name"><label for="Name">Name*</label>
-                <input
-                  data-validate-field="Name"
-                  id="Name"
-                  name="Name"
-                  type="text"
-                  placeholder="Your name..." required></div>
-                <div class="email-div"><label for="Email">E-Mail*</label>
-                <input
-                  data-validate-field="Email"
-                  type="email"
-                  id="Email"
-                  name="Email"
-                  placeholder="Your e-mail..." required></div>
-                </div>
-              <label for="Message">Message*</label>
-              <textarea
-                data-validate-field="Message"
-                id="Message" 
-                name="Message"
-                type="text"
-                placeholder="Write something..." required></textarea>
-            </form>
-              <input style="cursor:pointer" id="fcf-button" class="button-form inline-block button-bullet" type="submit" name="submit" value="SUBMIT">
+            <div class="contact-info-container">
+            <div class="contact-info">
+              <h3>Whatsapp</h3>
+                <p>You can contact me through Whatsapp. To do so, you can manually message me through (+351) 914 215 825, or click the following button to open the chat with me:</p>
+                <a class="button-form" onclick="gotoWhatsapp()">Open Whatsapp</a>
+              <h3>E-mail</h3>
+                <p>You can directly e-mail me. To do so, you can manually send an e-mail to contact@vitorbeuren.com, or click the following button to open the e-mail client:</p>
+                <a class="button-form" onclick="gotoEmail()">Open E-mail</a>
+              <h3 class="linkedin-none">LinkedIn</h3>
+                <p class="linkedin-none">You can talk to me through LinkedIn. To do so, you can click the following link to go right to my profile:</p>
+                <a class="button-form last-info-button linkedin-none" onclick="gotoLinkedin()">Open LinkedIn</a>
+            </div>
+          </div>
           </div>
         </div>
-      </div>
+    </div>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/textFit.js"></script>
+    <script src="Resources/Script/nav.js"></script>
+    <script src="Resources/Script/contact.js"></script>
   </body>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/textFit.js"></script>
-  <script src="Resources/Script/nav.js"></script>
-  <script src="Resources/Script/contact.js"></script>
-  <script src="email.js"></script>
 </html>
